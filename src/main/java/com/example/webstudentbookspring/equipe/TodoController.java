@@ -18,7 +18,10 @@ TodoService service;
         List<Todo> todos = service.listTodos();
         return todos;
     }
-
+    @GetMapping("/info")
+    public String gitInfo(){
+        return "retourn dd";
+    }
 
     @PostMapping("/todo")
     public void saveTodo(@RequestBody Todo todo){
